@@ -31,7 +31,7 @@ public class BuscarServiceImpl implements BuscarService{
             while ((linea = br.readLine()) !=null){
                 String[] datos = linea.split(";");
                 if(buscarResquestDTO.nroPlaca().equals(datos[0])){
-                    datoPlaca = new String[]{datos[0], datos[1], datos[2], datos[3], datos[4]};
+                    datoPlaca = new String[]{datos[1], datos[2], datos[3], datos[4], datos[5]};
                     break;
                 }
             }
